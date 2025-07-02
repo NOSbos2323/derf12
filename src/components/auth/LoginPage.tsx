@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
   const navigate = useNavigate();
 
-  // Remove auto-redirect to keep login button always visible
+  // Ensure login button is always visible - no auto-redirect logic
 
   const handleGoogleSuccess = (credentialResponse: any) => {
     console.log("Google Sign-In Success:", credentialResponse);
